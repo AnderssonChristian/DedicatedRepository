@@ -13,7 +13,8 @@
 
 Route::get('/', function()
 {
-	return View::make('hello')->with('name', 'friend');
+	$data = ['name' => 'jane', 'email' => 'jane@doe.com'];
+	return View::make('hello')->with($data);
 });
 
 Route::get('/hello/{name?}', function($name = 'world')
