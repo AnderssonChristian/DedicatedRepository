@@ -15,3 +15,8 @@ Route::get('/', function()
 {
 	return View::make('hello')->with('name', 'friend');
 });
+
+Route::get('/hello/{name}', function($name)
+{
+	return View::make('hello')->with('name', $name);
+});
