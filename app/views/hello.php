@@ -6,6 +6,6 @@
 
 </head>
 <body>
-	<h1><?php echo $hello . "!"; ?></h1>
+	<h1><?php echo $name . "!"; ?></h1>
 </body>
 </html>
